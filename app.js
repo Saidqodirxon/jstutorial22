@@ -6,9 +6,8 @@ let ism = prompt("Ismingizni kiriting : ");
 let kun = +prompt("Tugilgan kuningizni kiriting : ");
 let oy = +prompt("Tugilgan oyingizni kiriting : ");
 let yil = +prompt("Tugilgan yilingizni kiriting : ");
-document.querySelector(
-  "#kunoyyil"
-).textContent = `Kiritilgan ma'lumotlar :\n${ism} ${kun}-kun ${oy}-oy ${yil}-yilda tug'ilgan .`;
+document.querySelector("#kunoyyil").textContent =
+  `Kiritilgan ma'lumotlar :\n${ism} ${kun}-kun ${oy}-oy ${yil}-yilda tug'ilgan .`.toUpperCase();
 
 let hozirgiYil = new Date().getFullYear();
 let hozirgiOy = new Date().getMonth();
@@ -20,4 +19,4 @@ document.querySelector("#hisobla").textContent = `${ism} Siz ${
   hozirgiYil - yil
 }-yil ${hozirgiOy - oy + 1}-oy ${
   hozirgiKun - kun
-}-kun ${hozirgiSoat}-soat yashab qo'yibsiz .`;
+}-kun ${hozirgiSoat}-soat yashab qo'yibsiz .`.toUpperCase();
